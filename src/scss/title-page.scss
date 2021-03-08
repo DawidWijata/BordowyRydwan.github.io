@@ -1,0 +1,94 @@
+@use 'utils/font-sizes';
+@use 'utils/colors';
+
+$desktop-top-bar-height: 100px;
+  
+#title-page{
+  min-height: 100vh;
+  padding: 0 10vw;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  h1{
+    font-size: clamp(#{font-sizes.$headline-mobile}, 4vw, #{font-sizes.$headline-desktop});
+    font-family: 'Ubuntu Mono', monospace;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    color: colors.$green-text;
+
+    margin-bottom: 30px;
+  }
+
+  h2{
+    font-size: clamp(#{font-sizes.$title-header-mobile}, 8vw, #{font-sizes.$title-header-desktop});
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: colors.$header;
+    margin-bottom: 15px;
+  }
+
+  h3{
+    font-size: clamp(#{font-sizes.$title-subheader-mobile}, 6vw, #{font-sizes.$title-subheader-desktop});
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    color: colors.$primary-text;
+
+    margin-bottom: 30px;
+  }
+
+  p{
+    font-size: clamp(#{font-sizes.$subtext-mobile}, 4vw, #{font-sizes.$subtext-desktop});
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    line-height: 30px;
+    text-align: justify;
+    color: colors.$secondary-text;
+
+    width: 50%;
+    min-width: 400px;
+    margin-bottom: 30px;
+  }
+
+  .bg-curve{
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+
+    height: auto;
+  }
+}
+
+.title-page-container{
+  max-width: 1000px;
+  padding: 100px 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .cta{
+    align-self: flex-start;
+  }
+}
+
+@media (max-width: 1024px){
+  #title-page{
+    padding: 0 100px;
+
+    
+  }
+}
+
+@media (max-width: 600px){
+  #title-page{
+    padding: 0 30px;
+
+    p{
+      width: 100%;
+      line-height: 24px;
+      min-width: 0;
+    }
+  }
+}

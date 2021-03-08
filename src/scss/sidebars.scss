@@ -1,0 +1,116 @@
+@use 'utils/font-sizes';
+@use 'utils/colors';
+
+.left-bar {
+  width: 40px;
+  position: fixed;
+  bottom: 0;
+  left: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+
+  &::before {
+    display: block;
+    content: "";
+    width: 1.25px;
+    height: 20px;
+    background-color: colors.$bar;
+    margin-bottom: 10px;
+  }
+
+  &::after {
+    display: block;
+    content: "";
+    width: 1.25px;
+    height: 40px;
+    background-color: colors.$bar;
+    margin-top: 20px;
+  }
+
+  .bar__divider {
+    width: 1.25px;
+    height: 40px;
+    background-color: colors.$bar;
+    margin: 20px 0;
+  }
+
+  p {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    text-orientation: mixed;
+    margin-top: 10px;
+
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: font-sizes.$bar-text;
+  }
+
+  a{
+    padding: 10px;
+  }
+
+  img {
+    margin: 15px 0;
+    transition-duration: .15s;
+  }
+
+  img:hover{
+    transform: translateY(-5px);
+  }
+}
+
+.right-bar {
+  width: 40px;
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+
+  &::before {
+    display: block;
+    content: "";
+    width: 1.25px;
+    height: 40px;
+    background-color: colors.$bar;
+    margin-bottom: 10px;
+  }
+
+  &::after {
+    display: block;
+    content: "";
+    width: 1.25px;
+    height: 100px;
+    background-color: colors.$bar;
+    margin-top: 20px;
+  }
+
+  a {
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    margin-top: 20px;
+
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: font-sizes.$bar-text;
+
+    text-decoration: none;
+
+    &:link,
+    &:hover,
+    &:visited,
+    &:active {
+      color: inherit;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .right-bar, .left-bar{
+    display: none;
+  }
+}

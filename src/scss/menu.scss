@@ -1,0 +1,148 @@
+@use 'utils/font-sizes';
+@use 'utils/colors';
+
+$desktop-top-bar-height: 100px;
+$mobile-top-bar-height: 80px;
+
+#top-bar {
+  height: $desktop-top-bar-height;
+  padding: 20px 50px;
+  width: 100vw;
+
+  position: fixed;
+  top: 0;
+
+  background-color: colors.$primary-bg;
+  z-index: 100;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  img {
+    height: 100%;
+    width: auto;
+  }
+
+  nav{
+    display: flex;
+  }
+
+  ul {
+    display: flex;
+    position: static;
+  }
+
+  li {
+    margin: 0 30px;
+  }
+
+  a {
+    text-decoration: none;
+
+    &:link,
+    &:hover,
+    &:visited,
+    &:active {
+      color: inherit;
+    }
+  }
+
+  .cta{
+    padding: 10px 30px;
+  }
+
+  button{
+    all: unset;
+    display: none;
+    z-index: 101;
+  }
+}
+
+@media (max-width: 1024px){
+  #top-bar{
+    height: $mobile-top-bar-height;
+    padding: 20px 20px;
+  
+    li{
+      margin: 0 20px;
+      font-size: font-sizes.$menu-entry-desktop;
+    }
+  }
+}
+
+@media (max-width: 768px){
+  #top-bar{
+    nav{
+      position: absolute;
+      top: 0;
+      right: -100vw;
+      height: 100vh;
+      align-self: flex-start;
+      align-items: center;
+      justify-content: center;
+      width: 250px;
+      background-color: rgb(20, 44, 63);
+      transition-duration: .5s;
+      transition-timing-function: ease-in-out;
+      z-index: 100;
+    }
+
+    .hamburger-bar{
+      width: 40px;
+      height: 4px;
+      margin-bottom: 8px;
+      background-color: white;
+      border-radius: 10px;
+      transition-duration: .3s;
+
+      &:nth-child(2){
+        width: 30px;
+      }
+
+      &:nth-child(3){
+        width: 20px;
+      }
+    }
+
+    .hamburger-bar--active{
+      &:nth-child(1){
+        width: 40px;
+        transform: translateY(6px) rotate(45deg);
+        transform-origin: 50% 50%;
+      }
+
+      &:nth-child(2){
+        width: 40px;
+        display: none;
+      }
+      
+      &:nth-child(3){
+        width: 40px;
+        transform: translateY(-6px) rotate(-45deg);
+        transform-origin: 50% 50%;
+      }
+    }
+
+    .menu--active{
+      right: 0vw;
+      backdrop-filter: blur(10px);
+    }
+
+    ul{
+      flex-direction: column;
+    }
+
+    li{
+      margin: 30px 0;
+      text-align: center;
+    }
+
+    button{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  }
+}
