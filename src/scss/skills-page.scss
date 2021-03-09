@@ -1,2 +1,138 @@
 @use 'utils/font-sizes';
 @use 'utils/colors';
+
+#skills{
+  padding: 100px 0;
+}
+
+.skills-container{
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+
+  h4{
+    font-size: font-sizes.$headline-mobile;
+    font-weight: 600;
+    border-bottom: 3px colors.$headline-border solid;
+    align-self: flex-start;
+    padding: 0px 10px 5px 0px;
+    margin-bottom: 25px;
+  }
+}
+
+.skills-left, .skills-right{
+  display: flex;
+  flex-direction: column;
+
+  ul{
+    list-style-position: inside;
+  }
+
+  li{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: colors.$primary-text;
+
+    &::before{
+      content: '';
+      display: block;
+      width: 9px;
+      height: 30px;
+      margin-right: 15px;
+    }
+  }
+
+}
+
+.skills-left{
+  margin-bottom: 50px;
+
+  li::before{
+    background-image: url('../assets/list-point-blue-mobile.svg');
+  }
+}
+
+.skills-right{
+  li::before{
+    background-image: url('../assets/list-point-green-mobile.svg');
+  }
+}
+
+@media (min-width: 768px){
+  .skills-container{
+    padding: 0 150px;
+    align-self: center;
+  }
+}
+
+@media (min-width: 900px){
+  .skills-container{
+    padding: 0 10vw;
+    display: flex;
+    flex-direction: row;
+
+    ul{
+      width: 40vw;
+      max-width: 600px;
+      align-self: flex-start;
+    }
+  }
+
+  .skills-left, .skills-right{
+    margin-left: 30px;
+  }
+}
+
+@media (min-width: 1024px){
+  .skills-container{
+    padding: 0 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    ul{
+      width: 40vw;
+      max-width: 650px;
+      align-self: flex-start;
+    }
+
+    h4{
+      font-size: font-sizes.$headline-desktop;
+      margin-bottom: 40px;
+    }
+
+    li{
+      font-size: font-sizes.$text-desktop;
+      padding-left: 30px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .skills-left, .skills-right{
+    margin-left: 10px;
+
+    li::before{
+      width: 11px;
+      height: 35px;
+    }
+  }
+
+  .skills-left{
+    margin-bottom: 0px;
+  
+    li::before{
+      background-image: url('../assets/list-point-blue.svg');
+    }
+  }
+  
+  .skills-right{
+    li::before{
+      background-image: url('../assets/list-point-green.svg');
+    }
+  }
+}
+
+

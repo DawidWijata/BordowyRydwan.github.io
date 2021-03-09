@@ -2,7 +2,7 @@
 @use 'utils/colors';
 
 $desktop-top-bar-height: 100px;
-$mobile-top-bar-height: 80px;
+$mobile-top-bar-height: 60px;
 
 #top-bar {
   height: $desktop-top-bar-height;
@@ -38,6 +38,10 @@ $mobile-top-bar-height: 80px;
     margin: 0 30px;
   }
 
+  button{
+    display: none;
+  }
+
   a {
     text-decoration: none;
 
@@ -52,18 +56,12 @@ $mobile-top-bar-height: 80px;
   .cta{
     padding: 10px 30px;
   }
-
-  button{
-    all: unset;
-    display: none;
-    z-index: 101;
-  }
 }
 
 @media (max-width: 1024px){
   #top-bar{
     height: $mobile-top-bar-height;
-    padding: 20px 20px;
+    padding: 10px 30px;
   
     li{
       margin: 0 20px;
@@ -89,10 +87,16 @@ $mobile-top-bar-height: 80px;
       z-index: 100;
     }
 
+    button{
+      all: unset;
+      display: none;
+      z-index: 101;
+    }
+
     .hamburger-bar{
       width: 40px;
       height: 4px;
-      margin-bottom: 8px;
+      margin: 4px 0;
       background-color: white;
       border-radius: 10px;
       transition-duration: .3s;

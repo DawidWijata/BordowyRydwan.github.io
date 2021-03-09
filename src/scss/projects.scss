@@ -1,0 +1,38 @@
+@use 'utils/font-sizes';
+@use 'utils/colors';
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+
+
+.projects-container{
+  padding: 100px 30px;
+  background-color: colors.$secondary-bg;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h4{
+    font-size: font-sizes.$headline-mobile;
+    font-weight: 600;
+    border-bottom: 3px colors.$headline-border solid;
+    padding: 0 10px 5px 10px;
+    margin-bottom: 25px;
+  }
+}
+
+.carousel{
+  width: 300px;
+
+  .glide__slide{
+    height: 200px;
+    border: 3px rgba(49, 120, 198, 1) solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  div[data-glide-el="controls"]{
+    display: flex;
+    justify-content: space-between;
+  }
+}
