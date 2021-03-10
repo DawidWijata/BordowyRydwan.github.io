@@ -27,9 +27,15 @@
 
 .glide__slide{
   height: 200px;
-  border: 3px rgba(49, 120, 198, 1) solid;
+  border: 3px rgb(15, 41, 70) solid;
   display: flex;
   flex-direction: column;
+
+  background-size: auto 101%;
+  background-attachment: scroll;
+  background-position: center center;
+  background-color:rgb(14, 36, 73);
+  background-blend-mode: overlay;
 
   .desc{
     height: 50%;
@@ -56,14 +62,52 @@
     color: colors.$header;
     font-family: 'Ubuntu Mono', monospace;
 
-    width: 100px;
+    width: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 25px;
+    
 
     img{
       margin-bottom: 5px;
+      transition-duration: .1s;
     }
+
+    &:hover{
+
+      *{
+        color: colors.$primary-text;
+      }
+
+      img{
+        transform: translateY(-3px);
+      }
+    }
+  }
+
+  &:nth-last-child(1){
+    background-image: url('../assets/minesweeper_bg.jpg');
+  }
+
+  &:nth-child(2){
+    background-image: url('../assets/minesweeper_bg.jpg');
+  }
+
+  &:nth-child(3){
+    background-image: url('../assets/expense_tracker_bg.jpg');
+  }
+
+  &:nth-child(4){
+    background-image: url('../assets/chess_timer_bg.png');
+  }
+
+  &:nth-child(5){
+    background-image: url('../assets/meme_generator_bg.jpg');
+  }
+
+  &:nth-child(6), &:nth-child(1){
+    background-image: url('../assets/clock_bg.png');
   }
 }
 
@@ -76,6 +120,7 @@ div[data-glide-el="controls"]{
 
   button{
     all: unset;
+    cursor: pointer;
   
     &:first-child{
       transform: translateX(-21px);
@@ -100,6 +145,7 @@ div[data-glide-el="controls"]{
     background-color: transparent;
     box-shadow: none;
     border: none;
+    cursor: pointer !important;
   }
 }
 
@@ -157,7 +203,7 @@ div[data-glide-el="controls"]{
       color: colors.$header;
       font-family: 'Ubuntu Mono', monospace;
   
-      width: 150px;
+      width: 70px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -166,6 +212,34 @@ div[data-glide-el="controls"]{
       img{
         margin-bottom: 5px;
       }
+    }
+
+    &:nth-last-child(1){
+      background-image: url('../assets/expense_tracker_bg.jpg');
+    }
+  
+    &:nth-last-child(2){
+      background-image: url('../assets/minesweeper_bg.jpg');
+    }
+  
+    &:nth-child(3){
+      background-image: url('../assets/minesweeper_bg.jpg');
+    }
+  
+    &:nth-child(4){
+      background-image: url('../assets/expense_tracker_bg.jpg');
+    }
+  
+    &:nth-child(5){
+      background-image: url('../assets/chess_timer_bg.png');
+    }
+  
+    &:nth-child(6), &:nth-child(1){
+      background-image: url('../assets/meme_generator_bg.jpg');
+    }
+  
+    &:nth-child(7), &:nth-child(2){
+      background-image: url('../assets/clock_bg.png');
     }
   }
 
@@ -176,9 +250,7 @@ div[data-glide-el="controls"]{
     top: 400px / 2 - 21px;
     width: 100%;
   
-    button{
-      all: unset;
-    
+    button{  
       &:first-child{
         transform: translateX(-21px);
       }
@@ -188,6 +260,8 @@ div[data-glide-el="controls"]{
       }
     }
   }
+
+  
 }
 
 @media (min-width: 1080px){

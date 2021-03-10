@@ -4,6 +4,23 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const elements = document.querySelectorAll('section > div');
+const topBar = document.querySelector('#top-bar');
+let lastScrollPosition = 0;
+
+const isScrollDown = () => {
+  const recentScrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+  console.log([recentScrollPosition, lastScrollPosition])
+
+  if (recentScrollPosition > lastScrollPosition && window.innerWidth > 768){
+    topBar.classList.add('top-bar--hidden');
+  } 
+  else {
+    topBar.classList.remove('top-bar--hidden');
+  }
+
+ lastScrollPosition = recentScrollPosition <= 0 ? 0 : recentScrollPosition;
+}
 
 elements.forEach(element => {
   gsap.fromTo(
@@ -25,4 +42,9 @@ elements.forEach(element => {
     }
   );
 })
+
+window.addEventListener('scroll', isScrollDown);
+
+
+
 

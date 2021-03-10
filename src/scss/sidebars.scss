@@ -49,17 +49,43 @@
     font-size: font-sizes.$bar-text;
   }
 
-  a{
-    padding: 10px;
+  li{
+    padding: 10px 0;
   }
 
-  img {
+  button {
+    all: unset;
+    cursor: pointer;
     margin: 15px 0;
+
+    &:hover img{
+      transform: translateY(-3px);
+    }
+  }
+
+  img{
     transition-duration: .15s;
   }
 
-  img:hover{
-    transform: translateY(-5px);
+  a{
+    height: 30px;
+    padding: 10px;
+  }
+
+  svg, path{
+    transition-duration: .15s;
+  }
+
+  a:hover{
+
+    svg{
+      transform: translateY(-3px);
+    }
+
+    path{
+      fill: colors.$cta;
+    }
+    
   }
 }
 
@@ -110,6 +136,7 @@
       color: inherit;
     }
   }
+
 }
 
 @media (max-width: 768px) {

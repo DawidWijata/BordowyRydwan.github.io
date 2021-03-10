@@ -4,7 +4,7 @@ const glide = new Glide(".carousel", {
   type: 'carousel',
   perView: 2,
   focusAt: 'center',
-  gap: 20
+  gap: 25
 });
 
 const setCarouselSlidesPerView = () => {

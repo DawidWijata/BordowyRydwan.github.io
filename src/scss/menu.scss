@@ -4,10 +4,16 @@
 $desktop-top-bar-height: 100px;
 $mobile-top-bar-height: 60px;
 
+.top-bar--hidden{
+  transform: translateY(-100px) !important;
+}
+
 #top-bar {
   height: $desktop-top-bar-height;
+  transition-duration: .3s;
   padding: 20px 50px;
   width: 100vw;
+  transform: translateY(0px);
 
   position: fixed;
   top: 0;
