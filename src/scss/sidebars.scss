@@ -42,6 +42,8 @@
     transform: rotate(180deg);
     text-orientation: mixed;
     margin-top: 10px;
+    line-height: 40px;
+    text-align: center;
 
     font-family: 'Ubuntu Mono', monospace;
     font-size: font-sizes.$bar-text;
@@ -94,6 +96,7 @@
     writing-mode: vertical-lr;
     text-orientation: mixed;
     margin-top: 20px;
+    line-height: 40px;
 
     font-family: 'Ubuntu Mono', monospace;
     font-size: font-sizes.$bar-text;

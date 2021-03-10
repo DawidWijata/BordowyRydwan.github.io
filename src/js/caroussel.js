@@ -1,9 +1,25 @@
 import Glide from "@glidejs/glide";
 
 const glide = new Glide(".carousel", {
-  type: "carousel",
-  autoplay: 3500,
-  perView: 1,
+  type: 'carousel',
+  perView: 2,
+  focusAt: 'center',
+  gap: 20
 });
+
+const setCarouselSlidesPerView = () => {
+  const DESKTOP_SWITCH_SIZE = 1080;
+
+  if(window.innerWidth > DESKTOP_SWITCH_SIZE){
+    glide.settings.perView = 2;
+  }
+  else{
+    glide.settings.perView = 1;
+  }
+}
+
+glide.on(['mount.before', 'resize'], function () {
+  setCarouselSlidesPerView();
+})
 
 glide.mount();
