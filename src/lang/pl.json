@@ -8,8 +8,8 @@
   },
 
   "top-bar": {
-    "li:nth-child(1)": "O mnie",
-    "li:nth-child(2)": "Projekty",
+    "li:nth-child(1) a": "O mnie",
+    "li:nth-child(2) a": "Projekty",
     "li:nth-child(3) a": "Pobierz CV"
   },
   "title-page": {
@@ -22,7 +22,7 @@
   "about-me": {
     "p:nth-child(1)": "Jestem Dawid, programista z Warszawy",
     "p:nth-child(2)": "Jestem na drugim roku studiów informatycznych (inż.). Lubię tworzyć rzeczy, które działają i mogą służyć innym użytkownikom Internetu - strony internetowe i aplikacje",
-    "p:nth-child(3)": "Pracowałem dla firmy <span class=\"grey-company\">GREY</span> jako front-end developer. Tworzyłem wysokiej jakości strony landing page, newslettery, mailingi dla firm takich jak PEPCO, Cyforwy Polsat and mBank.",
+    "p:nth-child(3)": "Pracowałem dla firmy <span class=\"grey-company\">GREY</span> jako front-end developer. Tworzyłem wysokiej jakości strony landing page, newslettery, mailingi dla firm takich jak PEPCO, Cyfrowy Polsat and mBank.",
     "p:nth-child(4)": "Moim celem jest ciągły progres i podnoszenie swoich umiejętności. Każdy projekt, jakiego się podejmuję jest dla mnie unikalnym doświadczeniem i przynosi nowe wyzwania, z którymi muszę się zmierzyć."
   },
   "skills": {

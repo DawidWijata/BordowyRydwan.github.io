@@ -26,7 +26,7 @@ const setLangIcon = () => {
   const img = new Image();
 
   langBtn.innerHTML = '';
-  img.src = (activeLang === 'PL') ? ENG_icon : PL_icon;
+  img.src = (activeLang === 'PL') ? PL_icon : ENG_icon;
 
   langBtn.appendChild(img);
 }

@@ -8,8 +8,8 @@
   },
 
   "top-bar": {
-    "li:nth-child(1)": "About me",
-    "li:nth-child(2)": "Projects",
+    "li:nth-child(1) a": "About me",
+    "li:nth-child(2) a": "Projects",
     "li:nth-child(3) a": "Resume"
   },
   "title-page": {
