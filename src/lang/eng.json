@@ -1,0 +1,50 @@
+{
+  "left-bar": {
+    "p": "Change to"
+  },
+
+  "right-bar": {
+    "a": "contact@dawidwijata.tech"
+  },
+
+  "top-bar": {
+    "li:nth-child(1)": "About me",
+    "li:nth-child(2)": "Projects",
+    "li:nth-child(3) a": "Resume"
+  },
+  "title-page": {
+    "h1": "Hi, my name is",
+    "h2": "Dawid Wijata.",
+    "h3": "I fill the web with quality.",
+    "p": "I’m a software engineer based in Warsaw, Poland specializing in building websites, web applications and everything in between.",
+    ".cta": "Get in touch"
+  },
+  "about-me": {
+    "p:nth-child(1)": "I’m Dawid, a software developer based in Warsaw, Poland",
+    "p:nth-child(2)": "I’m studying computer science at WULS in Warsaw (2nd year). I enjoy creating content which can be visible on the Internet - websites, web applications and other digital content.",
+    "p:nth-child(3)": "I worked for <span class=\"grey-company\">GREY</span>, as a front-end developer. I’ve been providing quality to landing pages, mailings and HTML5 banners for widely known companies like PEPCO, Cyfrowy Polsat and mBank.",
+    "p:nth-child(4)": "My goal is to constantly make progress and learn new things. Every project is unique and brings new challenges to face."
+  },
+  "skills": {
+    ".skills-left h4": "My skills",
+    ".skills-left li:nth-child(1)": "HTML5 & CSS (/w SCSS)",
+    ".skills-left li:nth-child(2)": "JS & TypeScript",
+    ".skills-left li:nth-child(3)": "Vue.js, Vue Router, Vuex, Nuxt.js",
+    ".skills-left li:nth-child(4)": "Figma, Adobe Photoshop",
+    ".skills-left li:nth-child(5)": "MySQL",
+    ".skills-left li:nth-child(6)": "NPM, Webpack",
+    ".skills-left li:nth-child(7)": "Git / GitHub",
+    ".skills-left li:nth-child(8)": "Linux systems",
+    ".skills-left li:nth-child(9)": "Mailings, GDN / DCM banners",
+    ".skills-left li:nth-child(10)": "C# / .NET",
+    ".skills-right h4": "I'm learning"
+  },
+  "projects": {
+    "h4": "Some things I've built"
+  },
+  "contact": {
+    "h4": "Get in touch",
+    "p": "My inbox is open for job and contract offers. If you need a website web application suited for your needs - I’m sure we can make a deal. If you’re a recruiter or company owner and you’re looking for a developer - don’t hesitate to mail me.",
+    ".cta": "Let's contact each other"
+  }
+}

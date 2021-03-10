@@ -1,0 +1,50 @@
+{
+  "left-bar": {
+    "p": "Zmień język"
+  },
+
+  "right-bar": {
+    "a": "kontakt@dawidwijata.tech"
+  },
+
+  "top-bar": {
+    "li:nth-child(1)": "O mnie",
+    "li:nth-child(2)": "Projekty",
+    "li:nth-child(3) a": "Pobierz CV"
+  },
+  "title-page": {
+    "h1": "Cześć, nazywam się",
+    "h2": "Dawid Wijata.",
+    "h3": "Moją domeną jest jakość.",
+    "p": "Jestem programistą specjalizującym się w pisaniu stron internetowych i aplikacji. Mieszkam w Warszawie.",
+    ".cta": "Skontaktujmy się"
+  },
+  "about-me": {
+    "p:nth-child(1)": "Jestem Dawid, programista z Warszawy",
+    "p:nth-child(2)": "Jestem na drugim roku studiów informatycznych (inż.). Lubię tworzyć rzeczy, które działają i mogą służyć innym użytkownikom Internetu - strony internetowe i aplikacje",
+    "p:nth-child(3)": "Pracowałem dla firmy <span class=\"grey-company\">GREY</span> jako front-end developer. Tworzyłem wysokiej jakości strony landing page, newslettery, mailingi dla firm takich jak PEPCO, Cyforwy Polsat and mBank.",
+    "p:nth-child(4)": "Moim celem jest ciągły progres i podnoszenie swoich umiejętności. Każdy projekt, jakiego się podejmuję jest dla mnie unikalnym doświadczeniem i przynosi nowe wyzwania, z którymi muszę się zmierzyć."
+  },
+  "skills": {
+    ".skills-left h4": "Potrafię używać",
+    ".skills-left li:nth-child(1)": "HTML5 & CSS (razem z SCSS)",
+    ".skills-left li:nth-child(2)": "JS & TypeScript",
+    ".skills-left li:nth-child(3)": "Vue.js, Vue Router, Vuex, Nuxt.js",
+    ".skills-left li:nth-child(4)": "Figma, Adobe Photoshop",
+    ".skills-left li:nth-child(5)": "MySQL",
+    ".skills-left li:nth-child(6)": "NPM, Webpack",
+    ".skills-left li:nth-child(7)": "Git / GitHub",
+    ".skills-left li:nth-child(8)": "Systemy Linux",
+    ".skills-left li:nth-child(9)": "Mailingi, bannery GDN / DCM",
+    ".skills-left li:nth-child(10)": "C# / .NET",
+    ".skills-right h4": "Aktualnie się uczę:"
+  },
+  "projects": {
+    "h4": "Kilka moich projektów"
+  },
+  "contact": {
+    "h4": "Pozostańmy w kontakcie",
+    "p": "Moja skrzynka mailowa jest otwarta na oferty pracy oraz zleceń. Jeśli potrzebujesz strony internetowej lub aplikacji dopasowanej idealnie pod Ciebie - napisz - na pewno się dogadamy. Jeśli jesteś rekruterem i szukasz developera do projektu, również nie wahaj się pisać :)",
+    ".cta": "Napisz e-mail"
+  }
+}

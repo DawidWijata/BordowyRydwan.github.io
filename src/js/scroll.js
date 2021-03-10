@@ -10,8 +10,6 @@ let lastScrollPosition = 0;
 const isScrollDown = () => {
   const recentScrollPosition = window.pageYOffset || document.documentElement.scrollTop;
 
-  console.log([recentScrollPosition, lastScrollPosition])
-
   if (recentScrollPosition > lastScrollPosition && window.innerWidth > 768){
     topBar.classList.add('top-bar--hidden');
   } 

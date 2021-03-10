@@ -313,3 +313,9 @@ div[data-glide-el="controls"]{
     }
   }
 }
+
+@media (max-width: 340px){
+  .carousel{
+    transform: scale(0.9);
+  }
+}
