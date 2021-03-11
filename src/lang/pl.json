@@ -10,7 +10,8 @@
   "top-bar": {
     "li:nth-child(1) a": "O mnie",
     "li:nth-child(2) a": "Projekty",
-    "li:nth-child(3) a": "Pobierz CV"
+    "li:nth-child(3) a": "Pobierz CV",
+    ".menu-lang-change p": "Język: "
   },
   "title-page": {
     "h1": "Cześć, nazywam się",
@@ -22,7 +23,7 @@
   "about-me": {
     "p:nth-child(1)": "Jestem Dawid, programista z Warszawy",
     "p:nth-child(2)": "Jestem na drugim roku studiów informatycznych (inż.). Lubię tworzyć rzeczy, które działają i mogą służyć innym użytkownikom Internetu - strony internetowe i aplikacje",
-    "p:nth-child(3)": "Pracowałem dla firmy <span class=\"grey-company\">GREY</span> jako front-end developer. Tworzyłem wysokiej jakości strony landing page, newslettery, mailingi dla firm takich jak PEPCO, Cyfrowy Polsat and mBank.",
+    "p:nth-child(3)": "Pracowałem dla firmy <span class=\"grey-company\">GREY</span> jako front-end developer. Tworzyłem wysokiej jakości strony landing page, newslettery, mailingi dla firm takich jak PEPCO, Cyfrowy Polsat i mBank.",
     "p:nth-child(4)": "Moim celem jest ciągły progres i podnoszenie swoich umiejętności. Każdy projekt, jakiego się podejmuję jest dla mnie unikalnym doświadczeniem i przynosi nowe wyzwania, z którymi muszę się zmierzyć."
   },
   "skills": {
@@ -37,7 +38,7 @@
     ".skills-left li:nth-child(8)": "Systemy Linux",
     ".skills-left li:nth-child(9)": "Mailingi, bannery GDN / DCM",
     ".skills-left li:nth-child(10)": "C# / .NET",
-    ".skills-right h4": "Aktualnie się uczę:"
+    ".skills-right h4": "Uczę się"
   },
   "projects": {
     "h4": "Kilka moich projektów"

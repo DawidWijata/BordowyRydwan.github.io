@@ -3,7 +3,7 @@ const ENG_icon = require('../assets/flag_eng.svg');
 const PL = require("../lang/pl.json");
 const ENG = require("../lang/eng.json");
 
-const langBtn = document.querySelector(".lang-change-btn");
+const langBtns = [...document.querySelectorAll(".lang-change-btn")];
 let activeLang = 'ENG';
 
 const setLang = () => {
@@ -20,15 +20,16 @@ const setLangFromLocalStorage = () => {
   }
 
   setCaptionsInLang();
+  setLangIcon();
 }
 
 const setLangIcon = () => {
   const img = new Image();
-
-  langBtn.innerHTML = '';
   img.src = (activeLang === 'PL') ? PL_icon : ENG_icon;
 
-  langBtn.appendChild(img);
+  langBtns.forEach(btn => {
+    btn.children[0].src = img.src;
+  })
 }
 
 const setCaptionsInLang = () => {
@@ -50,5 +51,5 @@ const handleLangButton = () => {
   setCaptionsInLang();
 }
 
-langBtn.addEventListener("click", handleLangButton);
+langBtns.forEach(btn => btn.addEventListener("click", handleLangButton));
 window.addEventListener('DOMContentLoaded', setLangFromLocalStorage);

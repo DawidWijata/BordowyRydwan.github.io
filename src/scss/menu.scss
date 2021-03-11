@@ -2,6 +2,7 @@
 @use 'utils/colors';
 
 $desktop-top-bar-height: 100px;
+$tablet-top-bar-height: 80px;
 $mobile-top-bar-height: 60px;
 
 .top-bar--hidden{
@@ -62,11 +63,26 @@ $mobile-top-bar-height: 60px;
   .cta{
     padding: 10px 30px;
   }
+
+  li:last-child{
+    display: none;
+    margin-top: 50px;
+  }
+
+  .menu-lang-change{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .lang-change-btn{
+    margin-left: 15px;
+  }
 }
 
 @media (max-width: 1024px){
   #top-bar{
-    height: $mobile-top-bar-height;
+    height: $tablet-top-bar-height;
     padding: 10px 30px;
   
     li{
@@ -78,6 +94,8 @@ $mobile-top-bar-height: 60px;
 
 @media (max-width: 768px){
   #top-bar{
+    height: $mobile-top-bar-height;
+
     nav{
       position: absolute;
       top: 0;
@@ -153,6 +171,10 @@ $mobile-top-bar-height: 60px;
       display: flex;
       flex-direction: column;
       align-items: flex-end;
+    }
+
+    li:last-child{
+      display: block;
     }
   }
 }
