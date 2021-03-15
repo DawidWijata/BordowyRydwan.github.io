@@ -40,16 +40,29 @@
 @media (min-width: 1024px){
   .contact-container{  
     h4{
-      font-size: font-sizes.$headline-desktop;
+      font-size: font-sizes.$headline-notebook;
       font-weight: 600;
       margin-bottom: 50px;
     }
 
     p{
-      font-size: font-sizes.$text-desktop;
-      line-height: 32px;
+      font-size: font-sizes.$text-notebook;
+      line-height: 26px;
       text-align: center;
       margin-bottom: 70px;
+    }
+  }
+}
+
+@media (min-width: 1440px){
+  .contact-container{  
+    h4{
+      font-size: font-sizes.$headline-desktop;
+    }
+
+    p{
+      font-size: font-sizes.$text-desktop;
+      line-height: 32px;
     }
   }
 }

@@ -33,7 +33,7 @@ const setLangIcon = () => {
 }
 
 const setCaptionsInLang = () => {
-  const langObj = eval(activeLang);
+  const langObj = activeLang === 'PL' ? PL : ENG;
 
   Object.entries(langObj).forEach(obj => {
     const [id, elements] = obj;

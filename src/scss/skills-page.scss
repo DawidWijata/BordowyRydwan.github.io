@@ -3,6 +3,7 @@
 
 #skills{
   padding: 100px 0;
+  width: 100vw;
 }
 
 .skills-container{
@@ -100,12 +101,12 @@
     }
 
     h4{
-      font-size: font-sizes.$headline-desktop;
+      font-size: font-sizes.$headline-notebook;
       margin-bottom: 40px;
     }
 
     li{
-      font-size: font-sizes.$text-desktop;
+      font-size: font-sizes.$text-notebook;
       padding-left: 30px;
       margin-bottom: 20px;
     }
@@ -131,6 +132,18 @@
   .skills-right{
     li::before{
       background-image: url('../assets/list-point-green.svg');
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .skills-container{
+    h4{
+      font-size: font-sizes.$headline-desktop;
+    }
+
+    li{
+      font-size: font-sizes.$text-desktop;
     }
   }
 }

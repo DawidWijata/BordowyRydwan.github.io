@@ -42,6 +42,7 @@ section{
 
 .blur-layer--active{
   display: block;
+  background-color: rgba(95, 168, 211, 0.6);
 }
 
 .bg-curve{
@@ -61,6 +62,7 @@ section{
   text-decoration: none;
   padding: 15px 30px;
   color: colors.$cta;
+  text-align: center;
 
   z-index: 2;
   transition-duration: .1s;
@@ -116,12 +118,6 @@ section > div > *{
   .social-icons{
     display: none;
   }
-}
-
-@media (min-width: 1920px){
-  /*.bg-curve{
-    width: 100vw;
-  }*/
 }
 
 

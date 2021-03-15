@@ -51,12 +51,16 @@ $mobile-top-bar-height: 60px;
 
   a {
     text-decoration: none;
+    transition-duration: .2s;
 
     &:link,
-    &:hover,
     &:visited,
     &:active {
       color: inherit;
+    }
+
+    &:hover{
+      color: colors.$cta;
     }
   }
 
