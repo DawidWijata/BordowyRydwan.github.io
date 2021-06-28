@@ -4,7 +4,7 @@ const PL = require("../lang/pl.json");
 const ENG = require("../lang/eng.json");
 
 const langBtns = [...document.querySelectorAll(".lang-change-btn")];
-let activeLang = 'ENG';
+let activeLang = 'PL';
 
 const setLang = () => {
   activeLang = (activeLang === 'ENG') ? 'PL' : 'ENG';
