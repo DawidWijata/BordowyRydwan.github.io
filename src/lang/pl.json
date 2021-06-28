@@ -31,7 +31,7 @@
     ".skills-left li:nth-child(1)": "HTML5 & CSS (razem z SCSS)",
     ".skills-left li:nth-child(2)": "JS & TypeScript",
     ".skills-left li:nth-child(3)": "Vue.js, Vue Router, Vuex, Nuxt.js",
-    ".skills-left li:nth-child(4)": "Vue.js, Vue Router, Vuex, Nuxt.js",
+    ".skills-left li:nth-child(4)": "Node.js, Express.js, Socket.io",
     ".skills-left li:nth-child(5)": "React, React Router, Redux",
     ".skills-left li:nth-child(6)": "MySQL i inne relacyjne bazy danych",
     ".skills-left li:nth-child(7)": "Git / GitHub",
