@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Dawid Wijata's development portfolio" />
+    <meta
+      name="keywords"
+      content="HTML, CSS, SASS, JavaScript, Vue.js, Front-end developer, Vue.js developer, JavaScript developer, developer, portfolio, projects, web applications"
+    />
+    <meta name="author" content="Dawid Wijata" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <title>Dawid Wijata</title>
+  <link rel="icon" href="favicon.ico"><link href="styles.css" rel="stylesheet"></head>
+  <body>
+    <aside class="left-bar" id="left-bar">
+      <button class="lang-change-btn">
+        <img src="assets/2f80e0f047747e8893b9.svg" alt="Switch language">
+      </button>
+      <p>Change lang</p>
+      <div class="bar__divider"></div>
+      <ul>
+        <li>
+          <a href="https://github.com/BordowyRydwan" rel="noopener noreferrer" target="_blank">
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7083 0.701332C5.93637 0.701332 0.451418 6.18628 0.451418 12.9582C0.450028 15.5313 1.25892 18.0394 2.76333 20.1269C4.26774 22.2143 6.39128 23.775 8.83267 24.5875C9.44551 24.6942 9.67472 24.3265 9.67472 24.0041C9.67472 23.7136 9.65878 22.749 9.65878 21.7219C6.57986 22.2894 5.78316 20.9718 5.53802 20.2817C5.39952 19.9287 4.80261 18.8415 4.28169 18.5498C3.8527 18.3206 3.23986 17.7531 4.26576 17.7384C5.2316 17.7225 5.92044 18.627 6.15087 18.9947C7.25398 20.848 9.01652 20.327 9.72007 20.0059C9.82793 19.2092 10.1491 18.6736 10.5021 18.3672C7.7749 18.0607 4.92518 17.003 4.92518 12.3147C4.92518 10.9812 5.39952 9.87928 6.18151 9.02007C6.05894 8.71365 5.62995 7.45732 6.30408 5.772C6.30408 5.772 7.32998 5.45087 9.67472 7.02956C10.6725 6.75263 11.7034 6.61324 12.7389 6.61527C13.7808 6.61527 14.8226 6.75255 15.8032 7.02833C18.1467 5.43494 19.1738 5.77323 19.1738 5.77323C19.8479 7.45855 19.4189 8.71488 19.2964 9.0213C20.0771 9.87928 20.5527 10.9665 20.5527 12.3147C20.5527 17.0189 17.6883 18.0607 14.9611 18.3672C15.4048 18.7496 15.7884 19.485 15.7884 20.6347C15.7884 22.2734 15.7725 23.591 15.7725 24.0053C15.7725 24.3265 16.0029 24.7089 16.6158 24.5863C19.0488 23.7648 21.163 22.2011 22.6608 20.1152C24.1585 18.0293 24.9645 15.5262 24.9652 12.9582C24.9652 6.18628 19.4802 0.701332 12.7083 0.701332Z" fill="#DBE1EC"/>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/dawid-wijata/" rel="noopener noreferrer" target="_blank">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0.225586 2.36695C0.225586 1.76947 0.462936 1.19646 0.88542 0.773973C1.3079 0.351488 1.88092 0.114139 2.4784 0.114139H24.9355C25.2315 0.113655 25.5248 0.171578 25.7985 0.284591C26.0722 0.397604 26.3209 0.563488 26.5304 0.772745C26.7399 0.982002 26.906 1.23052 27.0193 1.50408C27.1326 1.77764 27.1909 2.07086 27.1907 2.36695V24.824C27.191 25.1202 27.133 25.4135 27.0198 25.6872C26.9067 25.9608 26.7407 26.2095 26.5313 26.419C26.322 26.6285 26.0734 26.7946 25.7997 26.9079C25.5261 27.0212 25.2328 27.0794 24.9367 27.0793H2.4784C2.18245 27.0793 1.88941 27.021 1.616 26.9077C1.3426 26.7944 1.0942 26.6283 0.884987 26.419C0.675778 26.2097 0.509862 25.9612 0.39672 25.6877C0.283577 25.4143 0.225425 25.1212 0.225586 24.8252V2.36695ZM10.8989 10.3952H14.5502V12.2288C15.0772 11.1747 16.4255 10.2261 18.4516 10.2261C22.3358 10.2261 23.2563 12.3257 23.2563 16.178V23.314H19.3255V17.0556C19.3255 14.8616 18.7984 13.6237 17.46 13.6237C15.6031 13.6237 14.8309 14.9584 14.8309 17.0556V23.314H10.8989V10.3952ZM4.15759 23.146H8.0896V10.2261H4.15759V23.1448V23.146ZM8.65219 6.01215C8.6596 6.34881 8.5997 6.68356 8.47598 6.99676C8.35227 7.30996 8.16725 7.59529 7.93177 7.83601C7.69629 8.07673 7.4151 8.26799 7.1047 8.39857C6.79431 8.52915 6.46095 8.59641 6.12421 8.59641C5.78746 8.59641 5.45411 8.52915 5.14371 8.39857C4.83332 8.26799 4.55213 8.07673 4.31665 7.83601C4.08117 7.59529 3.89614 7.30996 3.77243 6.99676C3.64872 6.68356 3.58881 6.34881 3.59623 6.01215C3.61078 5.35132 3.88351 4.72247 4.35601 4.26026C4.82852 3.79804 5.46322 3.53922 6.12421 3.53922C6.78519 3.53922 7.4199 3.79804 7.8924 4.26026C8.36491 4.72247 8.63764 5.35132 8.65219 6.01215Z" fill="#DBE1EC"/>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/dawid.wijata/" rel="noopener noreferrer" target="_blank">
+            <svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M17.274 25.4921V15.9991H20.4608L20.9376 12.3H17.2728V9.9381C17.2728 8.86684 17.5706 8.13633 19.1076 8.13633H21.0663V4.82698C20.1177 4.72603 19.1643 4.67693 18.2104 4.67989C15.3864 4.67989 13.4535 6.40444 13.4535 9.57039V12.3H10.2569V15.9991H13.4523V25.4921H1.80458C1.05691 25.4921 0.451416 24.8866 0.451416 24.1389V2.33148C0.451416 1.58381 1.05691 0.978317 1.80458 0.978317H23.612C24.3597 0.978317 24.9652 1.58381 24.9652 2.33148V24.1389C24.9652 24.8866 24.3597 25.4921 23.612 25.4921H17.274Z" fill="#DBE1EC"/>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </aside>
+    <aside class="right-bar" id="right-bar">
+      <a href="mailto:contact@dawidwijata.pl">contact@dawidwijata.pl</a>
+    </aside>
+    <section id="top-bar">
+      <a href="#title-page">
+        <img src="assets/068e4ec1f3fb5c62d1e3.svg" alt="Dawid Wijata" />
+      </a>
+      <div class="blur-layer"></div>
+      <button class="mobile-menu-button">
+        <div class="hamburger-bar"></div>
+        <div class="hamburger-bar"></div>
+        <div class="hamburger-bar"></div>
+      </button>
+      <nav class="menu">
+        <ul>
+          <li><a href="#about-me">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="https://drive.google.com/file/d/1OwceR5zLUSY2r6gLt93hkLKTn4SdSPPW/view?usp=sharing" class="cta" target="_blank" ref="noopener noreferrer">Resume</a></li>
+          <li>
+            <div class="menu-lang-change">
+              <p>Change lang: </p>
+              <button class="lang-change-btn">
+                <img src="assets/2f80e0f047747e8893b9.svg" alt="Switch language">
+              </button>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </section>
+    <section id="title-page">
+      <div class="title-page-container">
+        <h1>Hi, my name is</h1>
+        <div class="pitch">
+          <h2>Dawid Wijata.</h2>
+          <h3>I fill the web with quality.</h3>
+        </div>
+        <p>
+          I’m a software engineer based in Warsaw, Poland specializing in building
+          websites, web applications and everything in between.
+        </p>
+        <a href="#contact" class="cta">Get in touch</a>
+      </div>
+      <img class="bg-curve top-curve" src="assets/3217449b21a4682bd62e.png" alt="">
+    </section>
+    <section id="about-me">
+      <div class="about-me-container">
+        <div class="about-me__description">
+          <p class="headline-text">
+            I’m Dawid, a software developer based in Warsaw, Poland
+          </p>
+          <p>
+            I’m studying computer science at WULS in Warsaw (3rd year). I enjoy
+            creating content which can be visible on the Internet - websites, web
+            applications and other digital content.
+          </p>
+          <p>
+            Currently I work for Atinea as a full-stack developer. I gained here a lot of
+            experience during the development of an enterprise appliaction used by an automotive company.
+          </p>
+          <p>
+            My goal is to constantly make progress and learn new things. Every
+            project is unique and brings new challenges to face.
+          </p>
+        </div>
+        <div class="about-me__photo">
+          <div class="photo-wrapper">
+            <img src="assets/7a36583e09068fe3f419.jpg" alt="My photo" />
+          </div>
+        </div>
+      </div>
+      <img class="bg-curve" src="assets/c58a670bd02ef85a05a1.png" alt="">
+    </section>
+    <section id="skills">
+      <div class="skills-container">
+        <div class="skills-left">
+          <h4>My skills</h4>
+          <ul>
+            <li>HTML5 & CSS</li>
+            <li>TypeScript</li>
+            <li>Vue.js, Angular</li>
+            <li>C# language & .NET</li>
+            <li>Entity Framework</li>
+            <li>ASP.NET</li>
+            <li>MySQL, MS SQL, Oracle databases</li>
+            <li>Git / GitHub</li>
+            <li>Linux systems</li>
+            <li>Atlassian ecosystem</li>
+          </ul>
+        </div>
+        <div class="skills-right">
+          <h4>I'm learning</h4>
+          <ul>
+            <li>Docker</li>
+            <li>Kubernetes</li>
+            <li>Non-relational databases</li>
+            <li>Project management</li>
+            <li>Azure Cloud Services</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <img class="bg-curve top-curve" src="assets/3217449b21a4682bd62e.png" alt="">
+      <div class="projects-container">
+        <h4>Some things I've built</h4>
+        <div class="glide carousel">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide">
+                <div class="desc">
+                  MINESWEEPER
+                </div>
+                <div class="badges">
+                  <div class="badge">HTML5</div>
+                  <div class="badge">SCSS</div>
+                  <div class="badge">JS (ES6+)</div>
+                  <div class="badge">Vue.js</div>
+                  <div class="badge">Vue Router</div>
+                </div>
+                <div class="icons">
+                  <a href="https://github.com/BordowyRydwan/vue-minesweeper" rel="noopener noreferrer" target="_blank">
+                    <div class="icon">
+                      <img src="assets/a5713529b1fd14e0630e.svg" alt="">
+                    </div>
+                    <p class="label">
+                      GitHub
+                    </p>
+                  </a>
+                  <a href="https://dawidwijata.pl/vue-minesweeper" rel="noopener noreferrer" target="_blank">
+                    <div class="icon">
+                      <img src="assets/b5af6f0181b62b10cb8f.svg" alt="">
+                    </div>
+                    <p class="label">
+                      Live
+                    </p>
+                  </a>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="desc">
+                  EXPENSE TRACKER
+                </div>
+                <div class="badges">
+                  <div class="badge">HTML5</div>
+                  <div class="badge">SCSS</div>
+                  <div class="badge">JS (ES6+)</div>
+                  <div class="badge">Vue.js</div>
+                  <div class="badge">Vue Router</div>
+                  <div class="badge">Web Storage</div>
+                </div>
+                <div class="icons">
+                  <a href="https://github.com/BordowyRydwan/expense-tracker" rel="noopener noreferrer" target="_blank">
+                    <div class="icon">
+                      <img src="assets/a5713529b1fd14e0630e.svg" alt="">
+                    </div>
+                    <p class="label">
+                      GitHub
+                    </p>
+                  </a>
+                  <a href="https://dawidwijata.pl/expense-tracker/" rel="noopener noreferrer" target="_blank">
+                    <div class="icon">
+                      <img src="assets/b5af6f0181b62b10cb8f.svg" alt="">
+                    </div>
+                    <p class="label">
+                      Live
+                    </p>
+                  </a>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="desc">
+                  CHESS TIMER
+                </div>
+                <div class="badges">
+                  <div class="badge">HTML5</div>
+                  <div class="badge">SCSS</div>
+                  <div class="badge">JS (ES6+)</div>
+                  <div class="badge">Vue.js</div>
+                  <div class="badge">Vuex</div>
+                </div>
+                <div class="icons">
+                  <a href="https://github.com/BordowyRydwan/chess-timer" rel="noopener noreferrer" target="_blank">
+                    <div class="icon">
+                      <img src="assets/a5713529b1fd14e0630e.svg" alt="">
+                    </div>
+                    <p class="label">
+                      GitHub
+                    </p>
+                  </a>
+                  <a href="https://dawidwijata.tech/chess-timer" rel="noopener noreferrer" target="_blank">
+                    <div class="icon">
+                      <img src="assets/b5af6f0181b62b10cb8f.svg" alt="">
+                    </div>
+                    <p class="label">
+                      Live
+                    </p>
+                  </a>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="desc">
+                  MEME GENERATOR
+                </div>
+                <div class="badges">
+                  <div class="badge">HTML5</div>
+                  <div class="badge">CSS</div>
+                  <div class="badge">JS (ES6+)</div>
+                  <div class="badge">Pure JS</div>
+                  <div class="badge">MVC</div>
+                  <div class="badge">Canvas API</div>
+                </div>
+                <div class="icons">
+                  <a href="https://github.com/BordowyRydwan/meme-generator" rel="noopener noreferrer" target="_blank">
+                    <div class="icon">
+                      <img src="assets/a5713529b1fd14e0630e.svg" alt="">
+                    </div>
+                    <p class="label">
+                      GitHub
+                    </p>
+                  </a>
+                  <a href="https://dawidwijata.pl/meme-generator/" rel="noopener noreferrer" target="_blank">
+                    <div class="icon">
+                      <img src="assets/b5af6f0181b62b10cb8f.svg" alt="">
+                    </div>
+                    <p class="label">
+                      Live
+                    </p>
+                  </a>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="desc">
+                  WORLDWIDE CLOCK
+                </div>
+                <div class="badges">
+                  <div class="badge">HTML5</div>
+                  <div class="badge">SCSS</div>
+                  <div class="badge">JS (ES6+)</div>
+                  <div class="badge">React</div>
+                  <div class="badge">REST API</div>
+                </div>
+                <div class="icons">
+                  <a href="https://github.com/BordowyRydwan/react-worldwide-clock" rel="noopener noreferrer" target="_blank">
+                    <div class="icon">
+                      <img src="assets/a5713529b1fd14e0630e.svg" alt="">
+                    </div>
+                    <p class="label">
+                      GitHub
+                    </p>
+                  </a>
+                  <a href="https://dawidwijata.pl/react-worldwide-clock/" rel="noopener noreferrer" target="_blank">
+                    <div class="icon">
+                      <img src="assets/b5af6f0181b62b10cb8f.svg" alt="">
+                    </div>
+                    <p class="label">
+                      Live
+                    </p>
+                  </a>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+          <div data-glide-el="controls">
+            <button data-glide-dir="<">
+              <img src="assets/00d322976907237bef18.svg" alt="">
+            </button>
+            <button data-glide-dir=">">
+              <img src="assets/d68a7857e222bde4fdb8.svg" alt="">
+            </button>
+          </div>
+          <div class="glide__bullets" data-glide-el="controls[nav]">
+            <button class="glide__bullet" data-glide-dir="=0"></button>
+            <button class="glide__bullet" data-glide-dir="=1"></button>
+            <button class="glide__bullet" data-glide-dir="=2"></button>
+            <button class="glide__bullet" data-glide-dir="=3"></button>
+            <button class="glide__bullet" data-glide-dir="=4"></button>
+          </div>
+        </div>
+      </div>
+      <img class="bg-curve" src="assets/c58a670bd02ef85a05a1.png" alt="">
+    </section>
+    <section id="contact">
+      <div class="contact-container">
+        <h4>Get in touch</h4>
+        <p>
+          But if you would like to ask me about something or offer me a job - don’t hesitate to mail me.
+          I will response as soon as it is possible.
+        </p>
+        <a class="cta" href="mailto:contact@dawidwijata.tech">Let's contact each other</a>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <img src="assets/068e4ec1f3fb5c62d1e3.svg" alt="Dawid Wijata" />
+        <aside class="social-icons">
+          <a href="https://github.com/BordowyRydwan" rel="noopener noreferrer" target="_blank"><img src="assets/bac27378d38c737b8582.svg" alt="GitHub"></a>
+          <a href="https://www.linkedin.com/in/dawid-wijata/" rel="noopener noreferrer" target="_blank"><img src="assets/b568421d66a2b1d63cce.svg" alt="LinkedIn"></a>
+          <a href="https://www.facebook.com/dawid.wijata/" rel="noopener noreferrer" target="_blank"><img src="assets/63767fe02fdc9126f625.svg" alt="Facebook"></a>
+        </aside>
+        <p>© 2022 Dawid Wijata</p>
+        <p>All rights reserved</p>
+      </div>
+    </footer>
+  <script defer src="js/index.js"></script><script defer src="js/styles.js"></script></body>
+</html>
