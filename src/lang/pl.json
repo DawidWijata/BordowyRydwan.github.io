@@ -17,27 +17,31 @@
     "h1": "Cześć, nazywam się",
     "h2": "Dawid Wijata.",
     "h3": "Moją domeną jest jakość.",
-    "p": "Jestem programistą specjalizującym się w pisaniu stron internetowych i aplikacji. Mieszkam w Warszawie.",
+    "p": "Jestem programistą specjalizującym się w pisaniu aplikacji i witryn internetowych. Mieszkam w Warszawie.",
     ".cta": "Skontaktujmy się"
   },
   "about-me": {
     "p:nth-child(1)": "Jestem Dawid, programista z Warszawy",
-    "p:nth-child(2)": "Jestem na trzecim roku studiów informatycznych (inż.). Lubię tworzyć rzeczy, które działają i mogą służyć innym użytkownikom Internetu - strony internetowe i aplikacje",
-    "p:nth-child(3)": "Pracowałem zarówno dla dużych, znanych marek, takich jak Pepco, Cyfrowy Polsat i mBank - jak i dla średnich i małych firm. Takich właśnie klientów wspieram moimi umiejętnościami pracując w firmie Atinea jako full-stack developer",
+    "p:nth-child(2)": "Jestem na trzecim roku studiów informatycznych (inż.). Lubię tworzyć rzeczy, które działają i mogą służyć innym użytkownikom Internetu - aplikacje i strony internetowe",
+    "p:nth-child(3)": "Pracowałem zarówno dla dużych, znanych marek, takich jak Pepco, Cyfrowy Polsat i mBank - jak i dla średnich i małych firm. Aktualnie wspieram klientów moimi umiejętnościami pracując w firmie Atinea jako full-stack developer",
     "p:nth-child(4)": "Moim celem jest ciągły progres i podnoszenie swoich umiejętności. Każdy projekt, jakiego się podejmuję jest dla mnie unikalnym doświadczeniem i przynosi nowe wyzwania, z którymi muszę się zmierzyć."
   },
   "skills": {
     ".skills-left h4": "Potrafię używać",
-    ".skills-left li:nth-child(1)": "HTML5 & CSS (razem z SCSS)",
-    ".skills-left li:nth-child(2)": "JS & TypeScript",
-    ".skills-left li:nth-child(3)": "Vue.js, Vue Router, Vuex, Nuxt.js",
-    ".skills-left li:nth-child(4)": "Node.js, Express.js, Socket.io",
-    ".skills-left li:nth-child(5)": "React, React Router, Redux",
-    ".skills-left li:nth-child(6)": "MySQL i inne relacyjne bazy danych",
+    ".skills-left li:nth-child(1)": "HTML5 & CSS",
+    ".skills-left li:nth-child(2)": "TypeScript",
+    ".skills-left li:nth-child(3)": "Vue.js, Angular",
+    ".skills-left li:nth-child(4)": "C# oraz .NET",
+    ".skills-left li:nth-child(5)": "Entity Framework",
+    ".skills-left li:nth-child(6)": "Bazy danych MySQL, MS SQL, Oracle",
     ".skills-left li:nth-child(7)": "Git / GitHub",
-    ".skills-left li:nth-child(8)": "Systemy Linux",
-    ".skills-left li:nth-child(9)": "Mailingi, bannery GDN / DCM",
-    ".skills-left li:nth-child(10)": "C# / .NET, WPF",
+    ".skills-left li:nth-child(8)": "Testy jednostkowe",
+    ".skills-left li:nth-child(9)": "Jira, Confluence, Bitbucket",
+    ".skills-right li:nth-child(1)": "Docker",
+    ".skills-right li:nth-child(2)": "Kubernetes",
+    ".skills-right li:nth-child(3)": "Nierelacyjne bazy danych",
+    ".skills-right li:nth-child(4)": "Zarządzanie projektami",
+    ".skills-right li:nth-child(5)": "Azure Cloud Services",
     ".skills-right h4": "Uczę się"
   },
   "projects": {
@@ -45,7 +49,7 @@
   },
   "contact": {
     "h4": "Pozostańmy w kontakcie",
-    "p": "Aktualnie nie jestem zainteresowany ofertami pracy oraz zleceń. Jeśli jednak jest coś, o co chciałbyś spytać, nie wahaj się napisać maila - odpowiem najszybciej, jak tylko będę mógł.",
+    "p": "Jeśli jest coś, o co chciałbyś spytać, nie wahaj się napisać maila - odpowiem najszybciej, jak tylko będę mógł.",
     ".cta": "Napisz e-mail"
   }
 }
